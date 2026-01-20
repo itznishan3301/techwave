@@ -133,9 +133,21 @@
           </div>
         </div>
 
-        <span class="absolute right-1 top-3 rounded-full bg-[#23F7A6] px-3 py-1 text-[11px] font-bold tracking-wide text-[#08140E] shadow-lg min-[992px]:right-4 min-[992px]:top-5">
-          NEW
-        </span>
+            <!-- NEW badge (animated) -->
+            <span class="absolute right-1 top-3 min-[992px]:right-4 min-[992px]:top-5">
+            <!-- glow ring animation -->
+            <span
+                class="absolute inset-0 rounded-full bg-[#23F7A6]/45 blur-md animate-ping"
+                aria-hidden="true"
+            ></span>
+
+            <!-- badge -->
+            <span
+                class="relative inline-flex rounded-full bg-[#23F7A6] px-3 py-1 text-[11px] font-bold tracking-wide text-[#08140E] shadow-lg animate-pulse"
+            >
+                NEW
+            </span>
+            </span>
       </div>
 
       <h1 class="text-4xl font-extrabold tracking-tight min-[992px]:text-6xl">TechWave</h1>
