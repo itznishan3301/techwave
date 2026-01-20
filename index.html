@@ -16,19 +16,16 @@
     <header class="relative z-30">
       <div class="mx-auto max-w-[1200px] px-4">
         <nav class="relative flex h-[80px] items-center justify-between">
-          <!-- Logo -->
           <a href="#" class="text-2xl font-extrabold tracking-tight">
             <span class="text-white">Tech</span><span class="text-fuchsia-500">Wave</span>
           </a>
 
-          <!-- Desktop Center Menu (>=992px) -->
           <ul class="hidden items-center gap-10 text-sm font-medium text-white/80 min-[992px]:flex">
             <li><a href="#about" class="hover:text-white">About</a></li>
             <li><a href="#episodes" class="hover:text-white">Episodes</a></li>
             <li><a href="#host" class="hover:text-white">Host</a></li>
           </ul>
 
-          <!-- Desktop Subscribe Button (>=992px) -->
           <a
             href="#subscribe"
             class="hidden items-center gap-2 rounded-full bg-gradient-to-r from-[#FFC15A] via-[#FF3DCE] to-[#7C3AED] px-5 py-2.5 text-sm font-semibold text-[#140A1C] shadow-[0_12px_34px_rgba(255,61,206,0.22)] hover:brightness-110 min-[992px]:inline-flex"
@@ -37,10 +34,8 @@
             <img src="./assets/ArrowRight.png" alt="" class="h-4 w-4" />
           </a>
 
-          <!-- MOBILE MENU TOGGLE (checkbox hack) -->
           <input id="nav-toggle" type="checkbox" class="peer sr-only" />
 
-          <!-- Hamburger (<=991px) -->
           <label
             for="nav-toggle"
             class="inline-flex cursor-pointer items-center justify-center rounded-xl p-2 min-[992px]:hidden"
@@ -49,14 +44,12 @@
             <img src="./assets/hamburger-menu.png" alt="Menu" class="h-6 w-6" />
           </label>
 
-          <!-- Backdrop (shows when open) -->
           <label
             for="nav-toggle"
             class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 transition peer-checked:pointer-events-auto peer-checked:opacity-100 min-[992px]:hidden"
             aria-label="Close menu"
           ></label>
 
-          <!-- Mobile Dropdown Panel -->
           <div
             class="pointer-events-none absolute left-0 right-0 top-[80px] z-50 origin-top scale-95 opacity-0 transition
                    peer-checked:pointer-events-auto peer-checked:scale-100 peer-checked:opacity-100
@@ -96,9 +89,8 @@
       </div>
     </header>
 
-<!-- HERO -->
+<!-- Hero/Banner -->
 <section class="relative overflow-hidden">
-  <!-- Background image -->
   <div class="absolute inset-0">
     <img src="./assets/hero-bg.png" alt="" class="h-full w-full object-cover" />
     <div class="absolute inset-0 bg-[#07061A]/60"></div>
@@ -106,7 +98,6 @@
 
   <div class="relative z-10 mx-auto max-w-[1200px] px-4">
     <div class="flex min-h-[520px] flex-col items-center justify-center pt-10 text-center min-[992px]:min-h-[680px] min-[992px]:pt-16">
-      <!-- Circle -->
       <div class="relative mb-8 min-[992px]:mb-10">
         <div class="absolute -inset-10 rounded-full bg-fuchsia-500/10 blur-3xl"></div>
 
@@ -114,15 +105,12 @@
           class="relative rounded-full p-[6px] min-[992px]:p-[7px]"
           style="background: radial-gradient(circle at 30% 30%, rgba(255,61,206,0.35), rgba(124,58,237,0.18), rgba(255,193,90,0.18));"
         >
-          <!-- wrapper so we can overlay microphone -->
           <div class="relative">
             <img
               src="./assets/hero-circle.png"
               alt="Podcast"
               class="h-[170px] w-[170px] rounded-full min-[992px]:h-[240px] min-[992px]:w-[240px]"
             />
-
-            <!-- microphone (normal size, centered) -->
             <img
               src="./assets/microphone.png"
               alt="Microphone"
@@ -132,16 +120,12 @@
             />
           </div>
         </div>
-
-            <!-- NEW badge (animated) -->
             <span class="absolute right-1 top-3 min-[992px]:right-4 min-[992px]:top-5">
-            <!-- glow ring animation -->
             <span
                 class="absolute inset-0 rounded-full bg-[#23F7A6]/45 blur-md animate-ping"
                 aria-hidden="true"
             ></span>
 
-            <!-- badge -->
             <span
                 class="relative inline-flex rounded-full bg-[#23F7A6] px-3 py-1 text-[11px] font-bold tracking-wide text-[#08140E] shadow-lg animate-pulse"
             >
@@ -179,10 +163,9 @@
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- About -->
 <section id="about" class="bg-[#07061A]">
   <div class="mx-auto max-w-[1200px] px-4 py-14 min-[992px]:py-20">
-    <!-- Heading -->
     <h2
       class="text-center text-[30px] font-extrabold leading-tight tracking-tight text-white
              min-[576px]:text-[40px]
@@ -191,7 +174,6 @@
       About The Podcast
     </h2>
 
-    <!-- Description (exact text & alignment like images) -->
     <div
       class="mx-auto mt-5 max-w-[920px] text-center text-[12px] leading-[1.6] text-white/55
              min-[576px]:mt-6 min-[576px]:text-[14px]
@@ -211,16 +193,13 @@
       </p>
     </div>
 
-    <!-- Divider line -->
     <div class="mx-auto mt-10 h-px w-full max-w-[1080px] bg-white/10 min-[992px]:mt-12"></div>
 
-    <!-- Stats: Desktop = 4 in a row, Mobile = 2x2 grid -->
     <div
       class="mx-auto mt-10 grid max-w-[1080px] grid-cols-2 gap-y-10
              min-[576px]:mt-12 min-[576px]:gap-y-12
              min-[992px]:mt-14 min-[992px]:grid-cols-4 min-[992px]:gap-y-0"
     >
-      <!-- Stat 1 -->
       <div class="text-center">
         <div class="text-[34px] font-extrabold text-[#23F7A6] min-[576px]:text-[42px] min-[992px]:text-[28px]">
           150K+
@@ -230,7 +209,6 @@
         </div>
       </div>
 
-      <!-- Stat 2 -->
       <div class="text-center">
         <div class="text-[34px] font-extrabold text-[#23F7A6] min-[576px]:text-[42px] min-[992px]:text-[28px]">
           200+
@@ -240,7 +218,6 @@
         </div>
       </div>
 
-      <!-- Stat 3 -->
       <div class="text-center">
         <div class="text-[34px] font-extrabold text-[#23F7A6] min-[576px]:text-[42px] min-[992px]:text-[28px]">
           4.9★
@@ -250,7 +227,6 @@
         </div>
       </div>
 
-      <!-- Stat 4 -->
       <div class="text-center">
         <div class="text-[34px] font-extrabold text-[#23F7A6] min-[576px]:text-[42px] min-[992px]:text-[28px]">
           50+
@@ -266,7 +242,6 @@
 <!-- WHY CHOOSE TECH WAVE -->
 <section class="bg-[#07061A]">
   <div class="mx-auto max-w-[1200px] px-4 py-14 min-[992px]:py-20">
-    <!-- Section Title -->
     <h2
       class="text-center text-[28px] font-extrabold text-white
              min-[576px]:text-[34px]
@@ -275,13 +250,11 @@
       Why Choose TechWave
     </h2>
 
-    <!-- Cards Grid -->
     <div
       class="mt-10 grid gap-6
              min-[576px]:gap-7
              min-[992px]:mt-14 min-[992px]:grid-cols-12"
     >
-      <!-- Card 1: Premium Audio Quality (Tall Left) -->
       <div
         class="rounded-[22px] bg-white/5 p-7
                ring-1 ring-white/10 backdrop-blur
@@ -299,7 +272,6 @@
         </p>
       </div>
 
-      <!-- Card 2: Mobile Friendly -->
       <div
         class="rounded-[22px] bg-white/5 p-7
                ring-1 ring-white/10 backdrop-blur
@@ -320,7 +292,6 @@
         </div>
       </div>
 
-      <!-- Card 3: Global Community -->
       <div
         class="rounded-[22px] bg-white/5 p-7
                ring-1 ring-white/10 backdrop-blur
@@ -341,7 +312,6 @@
         </div>
       </div>
 
-      <!-- Card 4: Exclusive Interviews (Wide Bottom) -->
       <div
         class="rounded-[22px] bg-white/5 p-7
                ring-1 ring-white/10 backdrop-blur
@@ -364,7 +334,6 @@
         </div>
       </div>
 
-      <!-- Card 5: Rich Resources -->
       <div
         class="rounded-[22px] bg-white/5 p-7
                ring-1 ring-white/10 backdrop-blur
@@ -387,7 +356,6 @@
 <!-- FEATURED EPISODES -->
 <section class="bg-[#07061A]">
   <div class="mx-auto max-w-[1200px] px-4 py-14 min-[992px]:py-20">
-    <!-- Section Title -->
     <h2
       class="text-center text-[28px] font-extrabold text-white
              min-[576px]:text-[34px]
@@ -396,15 +364,12 @@
       Featured Episodes
     </h2>
 
-    <!-- Cards Grid -->
     <div
       class="mt-10 grid grid-cols-1 gap-6
              min-[576px]:gap-7
              min-[992px]:mt-12 min-[992px]:grid-cols-3"
     >
-      <!-- CARD 1 -->
       <article class="rounded-[22px] bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden">
-        <!-- YouTube Video -->
         <div class="relative w-full aspect-video">
           <iframe
             src="https://www.youtube.com/embed/oX7OduG1YmI"
@@ -416,7 +381,6 @@
           ></iframe>
         </div>
 
-        <!-- Content -->
         <div class="p-6">
           <h3 class="text-[15px] font-extrabold text-white leading-snug">
             The Future of AI in Everyday Life
@@ -433,7 +397,6 @@
         </div>
       </article>
 
-      <!-- CARD 2 -->
       <article class="rounded-[22px] bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden">
         <div class="relative w-full aspect-video">
           <iframe
@@ -462,7 +425,6 @@
         </div>
       </article>
 
-      <!-- CARD 3 -->
       <article class="rounded-[22px] bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden">
         <div class="relative w-full aspect-video">
           <iframe
@@ -497,12 +459,10 @@
 <!-- MEET THE HOST -->
 <section class="bg-[#07061A]">
   <div class="mx-auto max-w-[1200px] px-4 pb-14 pt-14 min-[992px]:pb-20 min-[992px]:pt-20">
-    <!-- Title -->
     <h2 class="text-center text-[28px] font-extrabold tracking-tight text-white min-[576px]:text-[34px] min-[992px]:text-[40px]">
       Meet The Host
     </h2>
 
-    <!-- Host Card -->
     <div class="mt-10 min-[992px]:mt-12">
       <div
         class="w-full rounded-[26px] bg-white/5 px-6 py-8
@@ -510,9 +470,7 @@
                min-[576px]:px-8 min-[576px]:py-9
                min-[992px]:px-12 min-[992px]:py-10"
       >
-        <!-- Layout -->
         <div class="flex flex-col items-center gap-6 text-center min-[576px]:flex-row min-[576px]:items-start min-[576px]:gap-8 min-[576px]:text-left">
-          <!-- Image (left) -->
           <div class="shrink-0">
             <div
               class="h-[110px] w-[110px] overflow-hidden rounded-full
@@ -527,7 +485,6 @@
             </div>
           </div>
 
-          <!-- Text + icons -->
           <div class="flex-1">
             <h3 class="text-[18px] font-extrabold text-white min-[992px]:text-[20px]">
               Alex Kumar
@@ -539,7 +496,6 @@
               practical advice for anyone looking to grow in tech.
             </p>
 
-            <!-- Social icons row -->
             <div class="mt-5 flex items-center justify-center gap-3 min-[576px]:justify-start">
               <a
                 href="#"
@@ -579,6 +535,58 @@
     </div>
   </div>
 </section>
+
+<!-- Footer -->
+<footer class="relative overflow-hidden bg-[#07061A]">
+  <div class="absolute inset-0">
+    <img
+      src="./assets/footer-bg.png"
+      alt=""
+      class="h-full w-full object-cover object-center"
+    />
+    <div class="absolute inset-0 bg-[#07061A]/10"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-[1200px] px-4">
+    <div class="flex flex-col items-center justify-center py-14 text-center min-[992px]:py-16">
+
+      <h2 class="text-[42px] font-extrabold tracking-tight min-[576px]:text-[48px] min-[992px]:text-[56px]">
+        <span class="text-white">Tech</span><span class="text-fuchsia-500">Wave</span>
+      </h2>
+
+      <div
+        class="mt-5 flex flex-wrap items-center justify-center gap-x-7 gap-y-3
+               text-[12px] text-white/70 min-[992px]:mt-4"
+      >
+        <a href="#" class="flex items-center gap-2 hover:text-white/90">
+          <img src="./assets/spotify.png" alt="Spotify" class="h-4 w-4" />
+          <span>Spotify</span>
+        </a>
+
+        <a href="#" class="flex items-center gap-2 hover:text-white/90">
+          <img src="./assets/apple-podcast.png" alt="Apple Podcasts" class="h-4 w-4" />
+          <span>Apple Podcasts</span>
+        </a>
+
+        <a href="#" class="flex items-center gap-2 hover:text-white/90">
+          <img src="./assets/youtube-podcast.png" alt="YouTube" class="h-4 w-4" />
+          <span>YouTube</span>
+        </a>
+
+        <a href="#" class="flex items-center gap-2 hover:text-white/90">
+          <img src="./assets/twitter.png" alt="Twitter" class="h-4 w-4" />
+          <span>Twitter</span>
+        </a>
+      </div>
+
+      <p class="mt-6 text-[11px] text-white/55 min-[992px]:mt-5">
+        © 2026 TechWave Podcast. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
 
 
     
